@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>  Canvas baby- twitter  </title>
+	<style>
+		canvas { border: 1px solid black;	}
+		</style>
+		<script src= "tweetshirt.js"></script>
+		</head>
+
+<body>
+	<h1>TweetShirt</h1>
+	<canvas width="600" height="200" id= "tshirtCanvas">
+		<p>unfortunatelly you will have to upgrade your browser to se the canvas</p>
+	</canvas>
+
+	<form>
+		<p>
+			<label for="bacgroundColor">Select bacground color:</label>
+			<select id="backgroundColor">
+				<option value="white" selected="selected">White</option>
+				<option value="black">Black</option>
+			</select>
+		</p>
+		<p>
+			<label for="shape">Circles or squares?</label>
+			<select id="shape">
+				<option value="none" selected="selected">Neither</option>
+				<option value="circles">Circles</option>
+				<option value="squares">Squares</option>
+			</select>
+		</p>
+		<p>
+			<label for="foregroundColor">Select text color:</label>
+			<select id="foregroundColor">
+				<option value="black" selected="selected">Black</option>
+				<option value="white">White</option>
+			</select>
+		</p>
+		<p>
+			<label for="tweets">Pick a tweet:</label>
+			<select id="tweets">
+			</select>
+				</p>
+				<p>
+					Write your tweet:
+				</p>
+				<p>
+						<textarea name="write your tweet" rows="4" cols="20"></textarea>
+					</p>
+		<p>
+			<input type="button" id="previewButton" value="Preview">
+		</p>
+			</form>
+
+<script src="https://www.wickedlysmart.com/hfhtml5/tweetshirt/?callback=updateTweets"></script>
+
+
+</body>
+
+</html>
